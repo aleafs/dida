@@ -1,0 +1,27 @@
+{
+  "name": "interval",
+  "version": "0.0.1",
+  "author": "Aleafs Zhang (zhangxc83@gmail.com)",
+  "contributors": [{
+    "name": "aleafs", 
+    "email": "zhangxc83@gmail.com",
+    "web": "http://aleafs.github.com"
+  }],
+  "homepage": "https://github.com/aleafs/interval",
+  "repository": "git://github.com/aleafs/interval.git",
+  "description": "A setInterval interface for async method.",
+  "keywords": [ "setInterval", "async" ],
+  "dependencies": {},
+  "engines": {
+    "node": ">=0.6.9"
+  },
+  "devDependencies": {
+    "should"  : ">=0.4.2",
+    "mocha"   : ">=0.9.0",
+    "visionmedia-jscoverage" : ">=1.0.0"
+  },
+  "main"  : "./index.js",
+  "scripts": {
+    "test": "make test"
+  }
+}
