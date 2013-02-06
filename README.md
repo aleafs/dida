@@ -1,8 +1,8 @@
-[![Build Status](https://secure.travis-ci.org/aleafs/interval.png?branch=master)](http://travis-ci.org/aleafs/interval)
+[![Build Status](https://travis-ci.org/aleafs/interval.png?branch=master)](https://travis-ci.org/aleafs/interval)
 
 ## About
 
-`interval` is a `setInterval` interface for async method.
+`dida` is a `setInterval` interface for async method.
 
 ## Install
 
