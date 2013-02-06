@@ -8,16 +8,16 @@
 
 ```bash
 
-$ npm install interval
+$ npm install dida
 ```
 
 ## Usage
 
 ```javascript
 
-var _me = require('interval').create(function (sql) {
+var _me = require('dida').create(function (sql) {
   /**
-   * 
+   * @ suppose an async function as _db.query
    */
   _db.query(sql, function (e, res) {
     _me.next();
