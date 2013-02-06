@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aleafs/interval.png?branch=master)](https://travis-ci.org/aleafs/interval)
+[![Build Status](https://travis-ci.org/aleafs/interval.png?branch=master&_s=2kklf9242035)](https://travis-ci.org/aleafs/interval)
 
 ## About
 
