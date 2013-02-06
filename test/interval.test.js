@@ -44,7 +44,7 @@ describe('async setinterval interface', function () {
     var num = 2;
     var _me = interval.create(function (s) {
       _me.stop();
-      (Date.now() - s).should.above(4);
+      (Date.now() - s).should.above(3);
       if (0 === (--num)) {
         done();
       }
