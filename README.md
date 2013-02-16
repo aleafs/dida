@@ -27,6 +27,21 @@ _me.run('SELECT SLEEP(1)');
 
 ```
 
+or:
+
+```javascript
+
+var dida = require('dida');
+var timer = dida.setInterval(function () {
+  _db.query('SELECT SLEEP(1)', function (e, res) {
+    timer.next();  
+  });
+}, 100);
+
+dida.clearInterval(timer);
+
+```
+
 ## License
 
 MIT
