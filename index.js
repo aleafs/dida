@@ -2,5 +2,5 @@
 
 "use strict";
 
-module.exports = require(__dirname + '/lib/interval.js');
+module.exports = require(__dirname + '/lib/dida.js');
 

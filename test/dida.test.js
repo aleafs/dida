@@ -3,7 +3,7 @@
 "use strict";
 
 var should = require('should');
-var interval = require(__dirname + '/../');
+var dida = require(__dirname + '/../');
 
 describe('async setinterval interface', function () {
 
@@ -13,7 +13,7 @@ describe('async setinterval interface', function () {
     var _MESSAGES = [];
 
     var num = 5;
-    var _me = interval.create(function (a, b) {
+    var _me = dida.create(function (a, b) {
       _MESSAGES.push(a + b);
       process.nextTick(function () {
         num--;
@@ -42,7 +42,7 @@ describe('async setinterval interface', function () {
   /* {{{ should_aptotic_delay_works_fine() */
   it('should_aptotic_delay_works_fine', function (done) {
     var num = 2;
-    var _me = interval.create(function (s) {
+    var _me = dida.create(function (s) {
       _me.stop();
       (Date.now() - s).should.above(3);
       if (0 === (--num)) {
@@ -61,11 +61,27 @@ describe('async setinterval interface', function () {
    */
   /* {{{ should_random_delay_works_fine() */
   it('should_random_delay_works_fine', function (done) {
-    var _me = interval.create(function () {
+    var _me = dida.create(function () {
       done();
     }, {'interval' : 20, 'delay' : -1});
     _me.stop();
     _me.run();
+  });
+  /* }}} */
+
+  /* {{{ should_timer_api_works_fine() */
+  it('should_timer_api_works_fine', function (done) {
+    var num = 2;
+    var tm1 = dida.setInterval(function () {
+      dida.clearInterval(num);
+      dida.clearInterval({});
+      if (0 === (--num)) {
+        dida.clearInterval(tm1);
+        setTimeout(done, 10);
+      } else {
+        tm1.next();
+      }
+    }, 3);
   });
   /* }}} */
 
