@@ -7,8 +7,8 @@
     "email": "zhangxc83@gmail.com",
     "web": "http://aleafs.github.com"
   }],
-  "homepage": "https://github.com/aleafs/interval",
-  "repository": "git://github.com/aleafs/interval.git",
+  "homepage": "https://github.com/aleafs/dida",
+  "repository": "git://github.com/aleafs/dida.git",
   "description": "A setInterval interface for async method.",
   "keywords": [ "setInterval", "async" ],
   "dependencies": {},
