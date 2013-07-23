@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/aleafs/dida.png?branch=master)](https://travis-ci.org/aleafs/dida)
+[![Coverage Status](https://coveralls.io/repos/aleafs/dida/badge.png)](https://coveralls.io/r/aleafs/dida)
+[![Dependency Status](https://gemnasium.com/aleafs/dida.png)](https://gemnasium.com/aleafs/dida)
 
 ## About
 
